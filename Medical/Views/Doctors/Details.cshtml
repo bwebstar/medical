@@ -1,0 +1,41 @@
+﻿@model Medical.Models.Doctor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+            <h2>Doctor Details</h2>
+
+            <div>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FirstName)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.FirstName)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.MiddleName)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MiddleName)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.LastName)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.LastName)
+                    </dd>
+
+                </dl>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { controller = "Doctors", id = Model.ID }, htmlAttributes: new { @class = "btn btn-primary" })
+                @Html.ActionLink("Back to List", "Index", new { controller = "Doctors" }, new { @class = "btn btn-primary" })
+            </p>

@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+}
+
+<h2>Administrator</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+@Html.ActionLink("Patients", "Index", new {controller = "Patients"}, new { @class = "btn btn-primary" }) @Html.ActionLink("Doctors", "Index", new {controller = "Doctors"}, new { @class = "btn btn-primary" }) @Html.ActionLink("My To Does", "Index", new { controller = "ToDo" }, new { @class = "btn btn-primary" }) @Html.ActionLink("Manage All To Does", "All", new { controller = "ToDo" }, new { @class = "btn btn-primary" })
+
+
